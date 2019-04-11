@@ -1,37 +1,56 @@
 <!DOCTYPE HTML>
 
 <html lang = "en">
+
   <head>
     <meta charset ="utf-8">
-    <title>All About Me!!!</title>
+    <title>All About Me</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="shared.css">
+    <link rel="stylesheet" href="index.css">
   </head>
   <body>
     <nav>
-      <a href="contact.html">Contact Me!</a>
-      <a href="tell_me_more.html"> Tell Me More </a>
+      <ul>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="contact.html">Contact Me</a></li>
+        <li><a href="tell_me_more.html">All About You</a></li>
+      </ul>
     </nav>
-  
-    <h1>Hello, World!</h1>
+
+    <main>
+    <h1> Hello, World!</h1>
     <h2>My name is Yujailec Benitez.</h2>
-  <img
-    src="me.jpg"
-    alt="Yujailec-Benitez"
-    width="250"
-    height="250"
-  />
-  <p>I am learning Web Development at
+    <img
+      id="profile-pic"
+      src="me.jpg"
+      alt="Yujailec-Benitez"
+    />
+    <p>
+      I am learning Web Development at
     <!-- target _blank means the link will open in its own tab -->
-    <a href="https://wyncode.co" target="_blank">
-      Wyncode Academy.
-    </a>
-  </p>
-  <div>
-    Some of my favorite programming languages are
-    <ul>
-      <li>Ruby</li>
-      <li>JavaScript</li>
-      <li>Python</li>
-    </ul>
-  </div>
-  </body>
+      <a href="https://wyncode.co" target="_blank">
+        Wyncode Academy.
+      </a>
+    </p>
+
+    <div>
+      Some of my favorite programming languages are
+      <ul id="wrapper">
+        <li class="language">
+          <h3>Ruby</h3>
+          <img src="ruby.jpg" alt="Ruby"/>
+        </li>
+        <li class="language">
+          <h3>JavaScript</h3>
+          <img src="js.jpg" alt="JS"/>
+        </li>
+        <li class="language">
+          <h3>Python</h3>
+          <img src="python.jpg" alt="Python"/>
+        </li>
+      </ul>
+    </div>
+    </main>
+</body>
 </html>
